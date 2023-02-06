@@ -1,4 +1,4 @@
-name: Flutter Nightly Build
+name: OT Build
 
 on:
   schedule:
