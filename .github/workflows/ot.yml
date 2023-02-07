@@ -99,18 +99,18 @@ jobs:
       fail-fast: false
       matrix:
         job:
-          # - {
-          #     arch: x86_64,
-          #     target: aarch64-linux-android,
-          #     os: ubuntu-18.04,
-          #     extra-build-features: "",
-          #   }
           - {
               arch: x86_64,
-              target: armv7-linux-androideabi,
+              target: aarch64-linux-android,
               os: ubuntu-18.04,
               extra-build-features: "",
             }
+          # - {
+          #     arch: x86_64,
+          #     target: armv7-linux-androideabi,
+          #     os: ubuntu-18.04,
+          #     extra-build-features: "",
+          #   }
     steps:
       - name: Install dependencies
         run: |
